@@ -1,0 +1,284 @@
+*{box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+#logo{
+    width: 10%;
+    position:relative;
+}
+#header{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top:0;
+    left: 0;
+    align-items: center;
+    justify-content: space-around  ;
+}
+#nav-bar{
+    font-weight: 500;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    font-family:'Lobster';
+    align-items: center;
+    flex-direction: row;
+}
+#nav-bar>ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+}
+#nav-bar>ul>li{
+    padding-right:20px;
+    padding-left: 20px;
+}
+#nav-bar>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+.f{
+    background-image: url("gymPhoto5.avif");
+    background-repeat: no-repeat;
+    background-size:contain;
+    padding-left: 450px;
+}
+.image-gallery{
+    width:100%;
+    margin-top: 50px;
+    margin-left:0px;
+    margin-right: 0px;
+}
+.images{
+    display: none;
+    width:100%;
+    border-radius: 150px 150px 150px 150px;
+    object-fit:cover;
+}
+.images img{
+    height:400px;
+    border-radius: 150px 150px 150px 150px;
+    object-fit:contain;
+    padding: 0;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top:40%;
+    width:auto;
+    margin-top:-22px;
+    padding: 16px ;
+    color:yellow;
+    text-shadow: 2px 2px 2px grey;
+    font-weight: bold;
+    font-size:30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    
+}
+.prev{
+    left:600px
+}
+.next{
+    right:150px;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: grey;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: white;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+.Main_heading {
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: block;
+    height:100%;
+    padding: 0;
+    width: 100%;
+    line-height: 2px;
+    border-bottom: 5px solid white;
+}
+.Main_heading h1{
+    color: yellow;
+    font-size: 100px;
+    text-shadow: 2px 2px 2px black;
+}
+.Main_heading p{
+    color:chartreuse;
+    font-size: 20px;
+}
+.Package{
+    padding-top: 50px;
+    padding:10px;
+    line-height: 100px;     
+}
+th{
+    font-size: 35px;
+    background-color: white;
+    color:black;
+}
+td{
+    padding:15px 110x;
+    width:350px;
+    height: 110px;
+    text-align: center;
+    font-size: 35px;
+    color: yellow;
+    background-color:black;
+    font-family: 'Lobster', cursive;
+    font-family: 'Luckiest Guy', cursive;
+}
+.detail{
+    border: 3px solid yellow;
+    margin:10px;
+    padding-left: 20px;
+    width: 50%;
+    display:none;
+    font-size: 35px;
+    line-height:80px;
+}
+.detail h1{
+    text-align: center;        
+    font-size: 70px;
+    font-family: 'Lobster',cursive;
+    color: black;
+    text-shadow: 0px 0px 4px white ;    
+}
+.detail .price{
+    color:black;
+    text-shadow: 3px 3px 3px white;
+}
+.detail p{
+    text-align: center;
+    font-size: 30px;
+    color:darkred;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Luckiest Guy',cursive;
+}
+#bronze{
+    background-image: linear-gradient(to bottom right,#CD7F32,white);
+}
+#silver{
+    background-image: linear-gradient(to bottom right,silver,white);
+}
+#gold{
+    background-image: linear-gradient(to bottom right,gold, white);
+}
+#prime{
+    background-image: linear-gradient(to bottom right,#b9f2ff,white);
+}
+.packa{
+    cursor: pointer;
+    transition: transform .2s;
+    background-color:blakc1;
+    transition: all .3s;
+    text-shadow:10px 10px 15px black ;
+}
+.tac{
+    font-size:50px;
+    text-shadow: 20px 20px 15px black;
+}
+.packa:hover{
+    font-size:50px;
+    font-size-adjust: 50px;
+transition: all .3s;
+}
+.pak{
+    padding: 10px;
+    display: flex;
+}
+.extra{
+    border: 2px solid yellow;
+    color: yellow;
+    text-shadow: 1px 1px 1px yellow;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 40%;
+    font-size: 25px;
+    margin:10px;
+    background-color: black;
+    background-image: url("GymPhoto5.jpg");
+    background-size: 500px 600px;
+    background-repeat: no-repeat;
+}   
+.topic{
+    color:blue;
+    text-shadow: 1px 1px 1px black;
+}
+#contact{
+    border-top: 5px solid white  ;
+    background-image:url("gym.jpg");
+    background-size:1600px 500px;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    color:gold;
+    text-shadow: 0px 2px 2px black;
+    text-align: center;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom: 5px solid white;
+    padding-bottom: 20px;
+    width: 100%;
+}
+#contact input{
+    font-size: 20px;
+    border-radius: 10px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 3px solid black
+}
+#contact button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.footer{
+    text-align: center;
+    padding-top: 20px;
+}
+.line{
+    text-align: left;
+
+}
+.facebook{
+    display: inline;
+    padding-left: 20px;
+}
+.facebook1{
+    width: 3%;
+}
+.get_it{
+    display: inline;
+}
